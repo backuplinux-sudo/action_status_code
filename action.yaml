@@ -1,0 +1,13 @@
+name: Status Code
+description: Retorna o status code da requisição HTTP para o site especificado
+inputs:
+  site:
+    required: true
+    type: string
+    default: 'https://pudim.com.br'
+
+runs:
+  using: docker
+  image: app/Dockerfile
+  args:
+    - ${{ inputs.site }}
