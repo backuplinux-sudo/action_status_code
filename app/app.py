@@ -3,5 +3,5 @@ import os
 
 site = os.getenv("INPUT_SITE")
 resposta = requests.get(site)
+os.system("echo STATUS_CODE={resposta.status_code} >> $GITHUB_OUTPUT")
 
-print(f"Site: {site} | Código: {resposta.status_code}")
