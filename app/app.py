@@ -4,4 +4,4 @@ import os
 site = os.getenv("INPUT_SITE")
 resposta = requests.get(site)
 
-print(resposta.status_code)
+print(f"Site: {site} | Código: {resposta.status_code}")
