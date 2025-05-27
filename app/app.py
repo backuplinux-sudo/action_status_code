@@ -1,6 +1,7 @@
 import requests
+import os
 
-site = "https://pudim.com.br"
+site = os.getenv("INPUT_SITE")
 resposta = requests.get(site)
 
 print(resposta.status_code)

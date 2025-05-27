@@ -4,7 +4,6 @@ inputs:
   site:
     required: true
     type: string
-    default: 'https://pudim.com.br'
 
 runs:
   using: docker
